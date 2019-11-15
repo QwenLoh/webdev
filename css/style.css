@@ -171,7 +171,7 @@
 
 .footer{
 
-    margin-top:60px;
+    margin: 60px 0;
     padding: 50px 0;
 }
 
@@ -311,481 +311,157 @@
 /*PEOPLE*/
 
 
-
-
-
-
-/*TECHNOLOGIES*/
-
-.title h1 {
-
-    margin: 0 auto 30px auto;
-    padding-top: 100px;
-    font-family:"Playfair Display", serif;
-    font-weight:700;
-    font-size: 36px;
-    text-align:center;
+.prof {
+    padding: 40px 0 40px 0;
 
 }
-
-.title p{
-
-    display:block;
-    width: 50%;
-    text-align:center;
-    margin: 20px auto;
-    font-family: "raleway", sans-serif;
-    font-size: 18px;
-    font-weight:300;
-
-}
-
-.title a{
-
-    display:block;
-    box-sizing:border-box;
-    padding: 30px 0 0 0;
-    font-family: "raleway", sans-serif;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.title i{
-
-    display: block;
-    width: 100%;
-    margin: 10px auto 30px auto;
-    text-align:center;
-}
-
-
-.content h2{
-
-    display:block;
-    width: 100%;
-    font-family: "raleway", sans-serif;
-    font-size: 18px;
-    text-align: center;
-
-}
-
-
-.content p{
-
-    display:block;
-    width: 100%;
-    padding: 10px;
-    margin: 20px auto;
-    font-family: "raleway", sans-serif;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 300;
-    text-align: left;
-
-}
-
-.image{
-    display:block;
-    background: lightgray;
-    text-align:center;
-}
-
-.content h1, .advantages h1{
-
-    display:block;
-    width: 100%;
-    font-family: "Playfair Display", serif;
-    margin: 30px auto;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-
-}
-
-.advantages p{
-
-    display:block;
-    width: 100%;
-    padding: 10px;
-    margin: 20px auto;
-    font-family: "raleway", sans-serif;
-    text-align: center;
-    font-size: 16px;
-    font-weight:300;
-}
-
-.advantages div.image{
-
-    display:block;
-    padding: 30px;
-    background-color:lightgray;
-    border-radius: 50%;
-}
-
-.contact-form form{
-
-    margin: 0 auto;
-
-
-
-}
-
-.contact-form h1{
-
-    display:block;
-    margin: 30px 0;
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-
-
-}
-
-@media screen and (min-width:768px){
-
-    .content, .contact-form {
-        width:80%;
-        margin: 0 auto;
-    }
-
-}
-
-
-
 
 .prof h1{
     font-family: "Playfair Display", serif;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .prof h2 {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight:300;
+    letter-spacing: 1px;
+    color:#000;
+    margin-bottom:10px;
+}
+.prof h3{
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
     font-weight:300;
     letter-spacing: 1px;
     color:gray;
 }
-=======
-*{
-    margin:0;
-    padding: 0;
-    list-style: none;
+
+.prof h4{
+    margin:30px auto;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
 }
 
-.header{
+.prof p{
 
-    padding:0px;
-    box-shadow:0 0px 10px lightgray;
-    background-color:white;
-}
-
-
-.body {
-
-        margin-top:120px;
-}
-
-.logo_container {
-    color: #000;
-	text-align:center;
-    font-size:16px;
-    font-family: 'Playfair Display', serif;
-    box-sizing:border-box;
-    padding:20px 10px 10px 10px;
-    margin:0 auto;
-    background-color:white;
-}
-
-/*NAVBAR*/
-
-.navigation {
-
-    box-sizing:border-box;
-    padding: 15px 0;
-    margin: 0 auto;
-    text-align: center;
-    background-color:white;
-
-}
-
-.menu_btn a{
-
-    line-height: 30px;
-    font-family:"Open Sans Condensed", serif;
-    color:#000;
-
-}
-
-.menu_btn a:hover, .navbar > a:hover{
-
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.menu_btn a:visited, .navbar > a:visited{
-
-    text-decoration: none;
-
-}
-
-.navbar > a{
-
-    line-height: 30px;
-    font-family:"Open Sans Condensed", serif;
-    display:block;
-    text-align:center;
-    width:100%;
-    margin: 0 auto;
-    color:#000;
-}
-
-.research-dropdown, .tech-dropdown {
-
-    width:100%;
-    background-color:#fff;
-    display:none;
-
-}
-
-.research-dropdown a, .tech-dropdown a{
-
-    display:block;
-    margin:15px auto 15px auto;
-    color:#000;
-    text-align:center;
-    font-size: 14px;
-    font-family:"raleway", sans-serif;
-    font-weight:300;
-
-}
-
-
-/*BREADCRUMB*/
-
-.breadcrumb{
-
-    margin-top:20px;
-    background-color:rgb(0,0,0,0);
-    font-family:"raleway", sans-serif;
-    font-size:14px;
-}
-
-.breadcrumb::before{
-
-    content:"/ ";
-    white-space:pre;
-    font-family:"raleway", sans-serif;
-    font-size:14px;
-    color:#6c757d;
-}
-
-
-/*HOME*/
-
-.sect_header{
-
-    font-family:"Playfair Display", serif;
-    text-transform:uppercase;
-    text-align:center;
-    font-size:30px;
-}
-
-.research_ics, .research_csi{
-
-    margin:50px 0 70px 0;
-
-}
-
-.research_ics h2, .research_csi h2 {
-
-    text-align:bottom;
-    font-size:24px;
-    font-family:"Playfair Display", serif;
-
-}
-
-.research_ics p, .research_csi p {
-    font-family:"Raleway", sans-serif;
+    margin: 20px auto;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
     font-size: 16px;
-    font-weight:300;
+    color:#212529;
+}
+
+.prof p span{
+    color:gray;
+}
+
+@media screen and (min-width:992px){
+
+    .people{
+
+    width:70%;
+    margin: 0 auto;
 
 }
 
-.innovations{
+}
 
-    padding:15px;
-    margin-top: 50px;
+.people-title h1{
+    font-family:"Playfair Display", serif;
+    font-size:28px;
+    margin: 50px 0;
+}
+
+.people-card{
+
+    box-shadow: 0.5px solid lightgray;
+    border-radius: 20px;
+    margin:10px;
 
 }
 
-.innovations h2{
+.people-card h1{
 
-    margin-top:20px;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    text-align:left;
+    line-height:30px;
+}
+
+.people-card p{
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align:left;
+    line-height:15px;
+    margin:5px auto;
+    color:gray;
+}
+
+.people-card p span{
+
+    color:#212529;
+    font-weight: 400;
+    line-height:10px;
+}
+
+.alumni {
+
+    margin:40px auto;
+}
+
+.alumni h1{
+    font-family:"Playfair Display", serif;
     font-size:18px;
-    text-align:center;
-    font-family:"Playfair Display", serif;
-}
-
-.innovations p{
-
-    margin-top:20px;
-    text-align: justify;
-    font-family:"Raleway", sans-serif;
-    font-size: 16px;
-    font-weight:300;
-}
-
-/*FOOTER*/
-
-.footer{
-
-    margin-top:60px;
-    padding: 50px 0;
-}
-
-.openings h2, .contact h2{
-
-    font-family:"Open Sans Condensed", sans-serif;
-    text-align:center;
-    font-size: 16px;
-    text-transform:uppercase;
-    font-weight: 700;
-}
-
-.openings p, .contact p{
-
-    margin: 30px 0;
+    letter-spacing: 2px;
+    margin: 50px 0;
+    text-transform: uppercase;
     text-align: center;
+}
+
+.alumni table{
+
+    margin: 10px;
+}
+.alumni th{
     font-family:"Raleway", sans-serif;
-    color:#212529;
-    font-size: 14px;
+    font-size:16px;
+    text-align:right;
+    vertical-align:top;
+    padding:10px;
+    width:33%;
+}
+
+.alumni td{
+    font-family:"Raleway", sans-serif;
     font-weight: 300;
+    font-size:16px;
+    color:gray;
+    text-align:left;
+    vertical-align:top;
+    padding:10px;
+    width:67%;
 }
 
-
-/*RESPONSIVE NAVBAR & FOOTER*/
-
-@media screen and (max-width:767px){
-
-    .body{
-
-        margin:0 auto;
-    }
-
-    .navbar{
-        display:none;
-    }
-
-    .menu_btn {
-        display:block;
-    }
-
-    .research-dropdown, .tech-dropdown {
-
-    border-top: solid 0.25px lightgray;
-    border-bottom: solid 0.25px lightgray;
-
-    }
-
-    .research-dropdown a, .tech-dropdown a{
-
-    width: 60%;
-
-    }
-
-
+img.prof {
+    border-radius: 50%;
+    width:100%;
+    max-width: 250px;
+    margin: 10px 0;
 }
 
-@media screen and (min-width:768px){
-
-    .header{
-        position:fixed;
-        width:100%;
-        top:0;
-        left:0;
-        margin: 0 auto;
-        z-index:1;
-
-    }
-
-    .header-hero{
-        position:fixed;
-        width:100%;
-        top:0;
-        left:0;
-        margin: 0 auto;
-        z-index:1;
-
-    }
-
-    .navbar {
-        display:block;
-    }
-
-    .menu_btn {
-        display:none;
-    }
-
-
-    .research-dropdown a, .tech-dropdown a{
-
-
-
-    }
-
-
-    .openings h2, .openings p, .contact h2, .contact p{
-
-        text-align:left;
-
-    }
-
+img.people {
+    display:flex;
+    border-radius: 50%;
+    width:100%;
+    max-width: 150px;
+    margin: 30px auto;
+    float:center;
 }
-
-@media screen and (min-width:992px){
-
-    .navigation{
-
-        width:80%;
-    }
-
-}
-
-/*RESPONSIVE IMAGES*/
-
-@media screen and (max-width:1200px){
-
-    .img div{
-
-        min-height:220px;
-        background-color:lightgray;
-        text-align:center;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    .img div{
-
-        min-height:300px;
-        background-color:lightgray;
-        text-align:center;
-    }
-
-
-}
-
-/*PEOPLE*/
-
-
-
-
-
 
 /*TECHNOLOGIES*/
 
@@ -925,20 +601,6 @@
 
 }
 
-
-
-
-.prof h1{
-    font-family: "Playfair Display", serif;
-    font-size: 30px;
+.people {
+    margin: 50px auto;
 }
-
-.prof h2 {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight:300;
-    letter-spacing: 1px;
-    color:gray;
-}
->>>>>>> a5307ae3b91d2fc35f408791f84ed83b095df199
