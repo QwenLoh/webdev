@@ -1,0 +1,49 @@
+<div class="container-fluid header">
+
+    <div class="row logo_container">
+        <div class="col">SOH SIOW LING's LAB</div>
+    </div>
+
+    <div class="row navigation align-items-start">
+        <div id="menu" class="col-12 order-1 pb-2 menu_btn"><a href="#">MENU </a><i class="fas fa-arrow-down"></i></div>
+        <div class="col-12 order-2 col-md-2 order-md-1 navbar d-md-block"><a href="#/!home">HOME</a></div>
+        <div class="col-12 order-3 col-md-2 order-md-2 navbar d-md-block"><a href="#!people">PEOPLE</a></div>
+        <div id="research" class="col-12 order-4 col-md-2 order-md-3 navbar d-md-block"><a href="#">RESEARCH</a></div>
+        <div id="tech" class="col-12 order-6 col-md-2 order-md-4 navbar d-md-block"><a href="#">TECHNOLOGIES</a></div>
+        <div class="col-12 col-md-2 order-8 order-md-5 navbar d-md-block"><a href="#!publications">PUBLICATIONS</a></div>
+        <div class="col-12 col-md-2 order-9 order-md-6 navbar d-md-block"><a href="openings.html">OPENINGS</a></div>
+        <div class="col-12 order-5 col-md-4 order-md-7 offset-md-3 research-dropdown">
+            <a href="research_ics.html">Intelligent Chemical System</a>
+            <a href="research_csi.html">Charge Separation at Interfaces</a>
+        </div>
+        <div class="col-12 order-7 col-md-4 order-md-8 offset-md-5 tech-dropdown">
+            <a href="tech_ncp.html">Non-Charging Polymeric Surfaces</a>
+            <a href="tech_cdt.html">3D-printed Drug Delivery Tablet with Fully Customizable Release Profile</a>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    document.getElementById("menu").addEventListener("click", function() {
+        console.log("Success");
+        $(".navbar").toggle();
+        $(".tech-dropdown").hide();
+        $(".research-dropdown").hide();
+
+    });
+
+    document.getElementById("research").addEventListener("click", function() {
+        console.log("Success");
+        $(".research-dropdown").toggle();
+        $(".tech-dropdown").hide();
+
+    });
+
+    document.getElementById("tech").addEventListener("click", function() {
+        console.log("Success");
+        $(".tech-dropdown").toggle();
+        $(".research-dropdown").hide();
+
+    });
+</script>

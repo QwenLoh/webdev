@@ -604,3 +604,44 @@ img.people {
 .people {
     margin: 50px auto;
 }
+
+.paper-img {
+    /*display:none;*/
+    width:100%;
+    max-width:300px;
+    display:block;
+    margin:30px auto;
+    padding:10px;
+    border: solid lightgray 0.5px;
+    border-radius:20px;
+}
+
+.paper p{
+    font-family: "Raleway", sans-serif;
+    font-size:16px;
+    display:inline;
+}
+
+/*.paper p:hover + img{
+    display:block;
+    margin:0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px lightgray;
+    margin-bottom:30px;
+}*/
+
+.description p{
+
+    font-family:"Raleway", sans-serif;
+    font-weight:300;
+
+}
+
+.paper-entry {
+
+    margin:30px auto;
+}
+
+
+
+

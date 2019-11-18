@@ -1,0 +1,35 @@
+<div class="container body" ng-controller="PublicationList">
+    <!--row 0: Breadcrumb-->
+    <div class="row">
+        <div class="col">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item active">PUBLICATIONS</li>
+            </ol>
+        </div>
+    </div>
+
+    <!--DATA-->
+    <div ng-repeat="publication in publications | orderBy: '-'" class="row paper-entry">
+
+        <div class="col-1 index">{{publications.length-$index}}</div>
+        <div class="col-11 paper">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <p ng-repeat="author in publication.authors" class="authors">{{author+"; "}}</p>
+                    <p>{{publication.authors.foreach()}}{{publication.title}} <em>{{publication.journal}}</em> <b>{{publication.year}}</b>, <em>{{publication.volume}}</em>, {{publication.page}}.<br>{{publication.remarks}}</p>
+                    <p ng-bind-html="{{publication.remarks}}"></p>
+                    <img ng-src="{{publication.tocthumb}}" ng-show="{{publication.tocthumb}}" alt="" class="img-fluid paper-img">
+                </div>
+                <!--description-->
+                <div class="col-12 col-md-4 description">
+                    <p>{{description}}</p>
+                    <a ng-href="{{publication.link}}">View the paper</a>
+                    <a ng-href="{{publication.pdf}}">View the paper</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
